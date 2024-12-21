@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú de Jugadores</title>
+  <link rel="stylesheet" href="../../Css/styleseleccion.css">
+</head>
+<body>
+  <div class="menu-container">
+    <button class="settings-button">⚙️</button>
+
+    <div class="player-selector">
+      <button onclick="decreasePlayers()">&#9664;</button>
+      <span id="player-count">2</span>
+      <button onclick="increasePlayers()">&#9654;</button>
+    </div>
+
+    <div id="players-container">
+      <!-- Player slots will be generated here -->
+    </div>
+
+    <div class="color-buttons">
+      <button class="color-button" style="background-color: green;" onclick="selectColor('green')"></button>
+      <button class="color-button" style="background-color: red;" onclick="selectColor('red')"></button>
+      <button class="color-button" style="background-color: blue;" onclick="selectColor('blue')"></button>
+      <button class="color-button" style="background-color: yellow;" onclick="selectColor('yellow')"></button>
+    </div>
+
+    <button id="start-button" class="start-button" onclick="startGame()" style="display: none;">COMENZAR</button>
+  </div>
+
+  <script src="../../Js/juego/script.js"></script>
+</body>
+</html>
